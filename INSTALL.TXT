@@ -1,0 +1,17 @@
+firebird-fpc-udfs is tested to compile with fpc 2.4.0 and works on 
+Win32 and Linux32 platforms. Can be made to run on any platform 
+supported by the Firebird client library and freepascal.
+
+Installation
+------------
+1. Build the library (via included build script or IDE)
+2. Copy fpc_udf.dll|.so to your Firebird's UDF directory.
+3. Register the UDFs to your database by attaching to the database
+and running fpc_udf.sql.
+
+Dependencies
+------------
+- Firebird 2.5 ib_util.dll|.so (Firebird comes with it)
+  http://sourceforge.net/projects/firebird/files/
+- msvcrt.dll and msvcr80.dll (for Win32; not included)
+
